@@ -6,6 +6,7 @@ import com.mmanchola.sawnovaback.service.AdminUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.MessageSource;
 import org.springframework.core.env.Environment;
 import org.springframework.http.MediaType;
@@ -28,6 +29,9 @@ import java.util.Locale;
 @Slf4j
 @RequestMapping("/")
 public class HomeController {
+
+    @Value("${email.username}")
+    private String username;
 
     private final JavaMailSender mailSender;
     private final MessageSource messages;
@@ -96,7 +100,7 @@ public class HomeController {
         email.setSubject(subject);
         email.setText(body);
         email.setTo(emailAddress);
-        email.setFrom(env.getProperty("support.email"));
+        email.setFrom(username);
         return email;
     }
 
