@@ -28165,7 +28165,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand img, #darkNav .navbar-brand img {
-  height: 1.5rem;
+  height: 5rem;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link, #darkNav .navbar-nav .nav-item .nav-link {
