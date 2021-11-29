@@ -1,5 +1,6 @@
 package com.mmanchola.sawnovaback.service;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -9,6 +10,8 @@ import java.util.List;
 @Service
 public class AdminUserService {
 
+    @Value("${modes.testing}")
+    private boolean testingMode;
     private List<String> admins;
 
     public List<String> getAdmins() {
@@ -27,9 +30,11 @@ public class AdminUserService {
         String user5 = "jcruz@sawnova.com";
 
         admins.add(user1);
-        admins.add(user2);
-        admins.add(user3);
-        admins.add(user4);
-        admins.add(user5);
+        if (!testingMode) {
+            admins.add(user2);
+            admins.add(user3);
+            admins.add(user4);
+            admins.add(user5);
+        }
     }
 }

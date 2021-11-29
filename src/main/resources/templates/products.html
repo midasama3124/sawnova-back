@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Sawnova - Carpentry in Miami, Kitchens, Bathrooms, Closets, Outdoor Cabinets, Stairs, Doors, Residential
+        Cabinetry, Commercial Furniture, Custom-Made Millwork</title>
+    <link rel="icon" type="image/x-icon" href="image/saw-icon.svg"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/app.css" rel="stylesheet"/>
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<div th:replace="common/navbar-dark::navbar"></div>
+<!-- Gallery Grid-->
+<section class="page-section bg-light" id="portfolio">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Products</h2>
+            <h3 class="section-subheading text-muted">Here you may find our main products.</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Kitchen Cabinets</div>
+                        <!--                                <div class="portfolio-caption-subheading text-muted">Sketching</div>-->
+                    </div>
+                    <a class="portfolio-link" th:href="@{/gallery#kitchens}">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="image/portfolio/kitchens-thumbnail.jpg" alt=""/>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Bathroom Vanities</div>
+                        <!--                                <div class="portfolio-caption-subheading text-muted">Sketching</div>-->
+                    </div>
+                    <a class="portfolio-link" th:href="@{/gallery#vanities}">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="image/portfolio/vanities-thumbnail.jpg" alt=""/>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <div class="portfolio-item">
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">(Walk-In) Closets</div>
+                        <!--                                <div class="portfolio-caption-subheading text-muted">Sketching</div>-->
+                    </div>
+                    <a class="portfolio-link" th:href="@{/gallery#closets}">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="image/portfolio/closets-thumbnail.jpg" alt=""/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact-->
+<div th:replace="common/contact::contact"></div>
+<!-- Footer-->
+<div th:replace="common/footer::footer"></div>
+<!-- Core theme JS-->
+<script src="js/app.js"></script>
+</body>
+</html>
