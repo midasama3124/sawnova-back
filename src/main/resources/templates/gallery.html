@@ -1,259 +1,352 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Sawnova - Carpentry in Miami, Kitchens, Bathrooms, Closets, Outdoor Cabinets, Stairs, Doors, Residential Cabinetry, Commercial Furniture, Custom-Made Millwork</title>
-        <link rel="icon" type="image/x-icon" href="image/saw-icon.svg" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/app.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <div th:replace="common/navbar-dark::navbar"></div>
-        <!-- Gallery Grid-->
-        <section class="page-section bg-light" id="portfolio">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Sawnova - Carpentry in Miami, Kitchens, Bathrooms, Closets, Outdoor Cabinets, Stairs, Doors, Residential
+        Cabinetry, Commercial Furniture, Custom-Made Millwork</title>
+    <link rel="icon" type="image/x-icon" href="image/saw-icon.svg"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/app.css" rel="stylesheet"/>
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<div th:replace="common/navbar-dark::navbar"></div>
+<!-- Gallery Grid-->
+<section class="page-section bg-light" id="portfolio">
+    <div class="container" id="kitchens">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Kitchen Cabinets</h2>
+            <h3 class="section-subheading text-muted">Here you may find some of our finished kitchen cabinets.</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="image/portfolio/armando-kitchen-thumbnail.jpg" alt=""/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Armando's Kitchen</div>
+                        <!--                                <div class="portfolio-caption-subheading text-muted">Sketching</div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="image/portfolio/robert-kitchen-thumbnail.jpg" alt=""/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Robert's Kitchen</div>
+                        <!--                                <div class="portfolio-caption-subheading text-muted">Sketching</div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="image/portfolio/angela-kitchen-thumbnail.jpg" alt=""/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Angela's Kitchen</div>
+                        <!--                                <div class="portfolio-caption-subheading text-muted">Sketching</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="section-subheading text-muted"></h3>
+    </div>
+    <div class="container" id="closets">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">(Walk-In) Closets</h2>
+            <h3 class="section-subheading text-muted">Here you may find some of our finished (walk-in) closets.</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="image/portfolio/angela-closet-thumbnail.jpg" alt=""/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Angela's Closet</div>
+                        <!--                                <div class="portfolio-caption-subheading text-muted">Sketching</div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="image/portfolio/armando-closet-thumbnail.jpg" alt=""/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Armando's Closet</div>
+                        <!--                                <div class="portfolio-caption-subheading text-muted">Sketching</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="section-subheading text-muted"></h3>
+    </div>
+    <div class="container" id="vanities">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Bathroom Vanities</h2>
+            <h3 class="section-subheading text-muted">Here you may find some of our finished bathroom vanities.</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="image/portfolio/armando-vanities-thumbnail.jpg" alt=""/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Armando's Vanities</div>
+                        <!--                                <div class="portfolio-caption-subheading text-muted">Sketching</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact-->
+<div th:replace="common/contact::contact"></div>
+<!-- Footer-->
+<div th:replace="common/footer::footer"></div>
+<!-- Portfolio Modals-->
+<!-- Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="image/close-icon.svg" alt="Close modal"/></div>
             <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Gallery</h2>
-                    <h3 class="section-subheading text-muted">Here you may find some of our pre-designed projects.</h3>
-                </div>
-                <div class="row">
-<!--                    <div class="col-lg-4 col-sm-6 mb-4">-->
-<!--                        <div class="portfolio-item">-->
-<!--                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">-->
-<!--                                <div class="portfolio-hover">-->
-<!--                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>-->
-<!--                                </div>-->
-<!--                                <img class="img-fluid" src="image/portfolio/u-model-kitchen-thumbnail.jpg" alt="" />-->
-<!--                            </a>-->
-<!--                            <div class="portfolio-caption">-->
-<!--                                <div class="portfolio-caption-heading">U-Model Kitchen</div>-->
-<!--                                <div class="portfolio-caption-subheading text-muted">Illustration</div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-lg-4 col-sm-6 mb-4">-->
-<!--                        <div class="portfolio-item">-->
-<!--                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">-->
-<!--                                <div class="portfolio-hover">-->
-<!--                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>-->
-<!--                                </div>-->
-<!--                                <img class="img-fluid" src="image/portfolio/l-model-kitchen-thumbnail.jpg" alt="" />-->
-<!--                            </a>-->
-<!--                            <div class="portfolio-caption">-->
-<!--                                <div class="portfolio-caption-heading">L-Model Kitchen</div>-->
-<!--                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-lg-4 col-sm-6 mb-4">-->
-<!--                        <div class="portfolio-item">-->
-<!--                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">-->
-<!--                                <div class="portfolio-hover">-->
-<!--                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>-->
-<!--                                </div>-->
-<!--                                <img class="img-fluid" src="image/portfolio/linear-kitchen-thumbnail.jpg" alt="" />-->
-<!--                            </a>-->
-<!--                            <div class="portfolio-caption">-->
-<!--                                <div class="portfolio-caption-heading">Linear Model Kitchen</div>-->
-<!--                                <div class="portfolio-caption-subheading text-muted">Identity</div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">-->
-<!--                        <div class="portfolio-item">-->
-<!--                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">-->
-<!--                                <div class="portfolio-hover">-->
-<!--                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>-->
-<!--                                </div>-->
-<!--                                <img class="img-fluid" src="image/portfolio/outdoor-kitchen-thumbnail.jpg" alt="" />-->
-<!--                            </a>-->
-<!--                            <div class="portfolio-caption">-->
-<!--                                <div class="portfolio-caption-heading">Outdoor Kitchen</div>-->
-<!--                                <div class="portfolio-caption-subheading text-muted">Branding</div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="image/portfolio/kitchen-island-thumbnail.jpg" alt="" />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Island Kitchen</div>
-<!--                                <div class="portfolio-caption-subheading text-muted">Sketching</div>-->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Contact-->
-        <div th:replace="common/contact::contact"></div>
-        <!-- Footer-->
-        <div th:replace="common/footer::footer"></div>
-        <!-- Portfolio Modals-->
-        <!-- Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="image/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="image/portfolio/u-model-kitchen-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Threads</li>
-                                        <li>Category: Illustration</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">Armando's Kitchen</h2>
+                            <p class="item-intro text-muted">Here you may find some pictures of our latest work.</p>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/armando-kitchen1.jpg" alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/armando-kitchen2.jpg" alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/armando-kitchen3.jpg" alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/armando-kitchen4.jpg" alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/armando-kitchen5.jpg" alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/armando-kitchen6.jpg" alt=""/>
+                            <!--                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
+                            <ul class="list-inline">
+                                <!--                                <li>Date: June 2021</li>-->
+                                <li>Client: Private Customer</li>
+                                <li>Category: L-Model Kitchen</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close Project
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="image/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="image/portfolio/l-model-kitchen-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Explore</li>
-                                        <li>Category: Graphic Design</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
+    </div>
+</div>
+<!-- Modal 2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="image/close-icon.svg" alt="Close modal"/></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">Robert's Kitchen</h2>
+                            <p class="item-intro text-muted">Here you may find some pictures of our latest work.</p>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/robert-kitchen1.jpg"
+                                 alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/robert-kitchen2.jpg"
+                                 alt=""/>
+                            <!--                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
+                            <ul class="list-inline">
+                                <!--                                <li>Date: June 2021</li>-->
+                                <li>Client: Private Customer</li>
+                                <li>Category: L-Model Kitchen</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close Project
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="image/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="image/portfolio/linear-kitchen-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Finish</li>
-                                        <li>Category: Identity</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
+    </div>
+</div>
+<!-- Modal 3 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="image/close-icon.svg" alt="Close modal"/></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">Angela's Kitchen</h2>
+                            <p class="item-intro text-muted">Here you may find some pictures of our latest work.</p>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/angela-kitchen1.jpg"
+                                 alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/angela-kitchen2.jpg"
+                                 alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/angela-kitchen3.jpg"
+                                 alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/angela-kitchen4.jpg"
+                                 alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/angela-kitchen5.jpg"
+                                 alt=""/>
+                            <!--                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
+                            <ul class="list-inline">
+                                <li>Date: June 2021</li>
+                                <li>Client: Private Customer</li>
+                                <li>Category: Island Kitchen</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close Project
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="image/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="image/portfolio/outdoor-kitchen-full.jpg" alt="" />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>Date: January 2020</li>
-                                        <li>Client: Lines</li>
-                                        <li>Category: Branding</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
+    </div>
+</div>
+<!-- Modal 4 -->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="image/close-icon.svg" alt="Close modal"/></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">Angela's Closet</h2>
+                            <p class="item-intro text-muted">Here you may find some pictures of our latest work.</p>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/angela-closet1.jpg"
+                                 alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/angela-closet2.jpg"
+                                 alt=""/>
+                            <!--                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
+                            <ul class="list-inline">
+                                <li>Date: June 2021</li>
+                                <li>Client: Private Customer</li>
+                                <li>Category: Closet</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close Project
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal"><img src="image/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project Details Go Here-->
-                                    <h2 class="text-uppercase">Island Kitchen</h2>
-                                    <p class="item-intro text-muted">Here you may find some pictures of our latest work.</p>
-                                    <img class="img-fluid d-block mx-auto" src="image/portfolio/island_kitchen1.jpg" alt="" />
-                                    <img class="img-fluid d-block mx-auto" src="image/portfolio/island_kitchen2.jpg" alt="" />
-                                    <img class="img-fluid d-block mx-auto" src="image/portfolio/island_kitchen3.jpg" alt="" />
-                                    <img class="img-fluid d-block mx-auto" src="image/portfolio/island_kitchen4.jpg" alt="" />
-                                    <img class="img-fluid d-block mx-auto" src="image/portfolio/island_kitchen5.jpg" alt="" />
-<!--                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
-                                    <ul class="list-inline">
-                                        <li>Date: June 2021</li>
-                                        <li>Client: Private Customer</li>
-                                        <li>Category: Island Kitchen</li>
-                                    </ul>
-                                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                                        <i class="fas fa-times mr-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
+    </div>
+</div>
+<!-- Modal 5 -->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="image/close-icon.svg" alt="Close modal"/></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">Armando's Closet</h2>
+                            <p class="item-intro text-muted">Here you may find some pictures of our latest work.</p>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/armando-closet1.jpg"
+                                 alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/armando-closet2.jpg"
+                                 alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/armando-closet2.jpg"
+                                 alt=""/>
+                            <!--                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
+                            <ul class="list-inline">
+<!--                                <li>Date: June 2021</li>-->
+                                <li>Client: Private Customer</li>
+                                <li>Category: Closet</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close Project
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Core theme JS-->
-        <script src="js/app.js"></script>
-    </body>
+    </div>
+</div>
+<!-- Modal 6 -->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"><img src="image/close-icon.svg" alt="Close modal"/></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here-->
+                            <h2 class="text-uppercase">Armando's Vanities</h2>
+                            <p class="item-intro text-muted">Here you may find some pictures of our latest work.</p>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/armando-vanities1.jpg"
+                                 alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/armando-vanities2.jpg"
+                                 alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/armando-vanities3.jpg"
+                                 alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/armando-vanities4.jpg"
+                                 alt=""/>
+                            <img class="img-fluid d-block mx-auto" src="image/portfolio/armando-vanities5.jpg"
+                                 alt=""/>
+                            <!--                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>-->
+                            <ul class="list-inline">
+                                <!--                                <li>Date: June 2021</li>-->
+                                <li>Client: Private Customer</li>
+                                <li>Category: Bathroom Vanities</li>
+                            </ul>
+                            <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times mr-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Core theme JS-->
+<script src="js/app.js"></script>
+</body>
 </html>

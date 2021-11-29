@@ -53,10 +53,10 @@ public class HomeController {
         return "index";
     }
 
-    @GetMapping(value = {"services"})
+    @GetMapping(value = {"products"})
     public String showServices(Model model) {
         model.addAttribute("contactForm", new ContactForm());
-        return "services";
+        return "products";
     }
 
     @GetMapping(value = {"contact"})
