@@ -28,13 +28,16 @@ public class AdminUserService {
         String user3 = "ymachado@sawnova.com";
         String user4 = "ycampo@sawnova.com";
         String user5 = "jcruz@sawnova.com";
+        String user6 = "sales@sawnova.com";
 
-        admins.add(user1);
-        if (!testingMode) {
+        if (testingMode) {
+            admins.add(user1);
+        } else {
             admins.add(user2);
             admins.add(user3);
             admins.add(user4);
             admins.add(user5);
+            admins.add(user6);
         }
     }
 }
