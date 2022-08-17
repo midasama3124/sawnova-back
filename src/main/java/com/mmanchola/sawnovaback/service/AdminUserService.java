@@ -34,7 +34,7 @@ public class AdminUserService {
             admins.add(user1);
         } else {
             admins.add(user2);
-            admins.add(user3);
+//            admins.add(user3);
             admins.add(user4);
             admins.add(user5);
             admins.add(user6);
